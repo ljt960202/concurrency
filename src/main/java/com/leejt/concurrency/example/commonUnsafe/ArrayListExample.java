@@ -47,9 +47,9 @@ public class ArrayListExample {
                 countDownLatch.countDown();
             });
         }
-        log.info("size:{}",arrayList.size());
         countDownLatch.await();
         executorService.shutdown();
+        log.info("size:{}",arrayList.size());
     }
     private static void update(int count){
         arrayList.add(count);

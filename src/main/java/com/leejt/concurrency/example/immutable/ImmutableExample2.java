@@ -2,6 +2,7 @@ package com.leejt.concurrency.example.immutable;
 
 
 import com.google.common.collect.Maps;
+import com.leejt.concurrency.annoations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Collections;
@@ -15,6 +16,7 @@ import java.util.Map;
  * @Version 1.0
  **/
 @Slf4j
+@ThreadSafe
 public class ImmutableExample2 {
     private final static Integer a =1;
     private final static String b ="2";

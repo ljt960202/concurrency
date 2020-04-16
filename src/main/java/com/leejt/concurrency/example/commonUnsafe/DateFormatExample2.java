@@ -1,6 +1,7 @@
 package com.leejt.concurrency.example.commonUnsafe;
 
 import com.leejt.concurrency.annoations.NotThreadSafe;
+import com.leejt.concurrency.annoations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
 import java.text.ParseException;
@@ -18,7 +19,7 @@ import java.util.concurrent.Semaphore;
  * @Version 1.0
  **/
 @Slf4j
-@NotThreadSafe
+@ThreadSafe
 public class DateFormatExample2 {
     //请求总数
     public static int clientTotal = 5000;

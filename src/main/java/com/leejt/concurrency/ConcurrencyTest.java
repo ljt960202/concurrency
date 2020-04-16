@@ -7,6 +7,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * @ClassName ConcurrencyTest
@@ -22,7 +23,6 @@ public class ConcurrencyTest {
     public static int clientTotal = 5000;
     //同时并发执行的线程数
     public static int threadTotal = 200;
-
     public static int count = 0;
     public static void main(String[] args) throws InterruptedException {
         ExecutorService executorService = Executors.newCachedThreadPool();
